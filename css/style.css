@@ -1,0 +1,34 @@
+header, footer{
+	background-color: orange;
+	overflow: hidden;
+}
+
+nav{
+	float: right;
+}
+
+.subtitle{
+	float: left;
+	margin-top:0;
+}
+
+.title{
+	margin-bottom: 0;
+}
+
+.logo{
+	width: 45px;
+	height: auto;
+	margin: 15px;
+	float: left;
+}
+
+.menuitem{
+	display: inline-block;
+	margin: 10px;
+}
+
+.copyright{
+
+	text-align: center;
+}
