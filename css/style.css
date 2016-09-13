@@ -1,34 +1,109 @@
-header, footer{
-	background-color: orange;
-	overflow: hidden;
+header,
+footer {
+  background-color: orange;
+  overflow: hidden;
 }
 
-nav{
-	float: right;
+.subtitle {
+  float: left;
+  margin-top: 0;
 }
 
-.subtitle{
-	float: left;
-	margin-top:0;
+.title {
+  margin-bottom: 0;
 }
 
-.title{
-	margin-bottom: 0;
+
+
+.menuitem {
+  display: inline-block;
+  margin: 10px;
 }
 
-.logo{
-	width: 45px;
-	height: auto;
-	margin: 15px;
-	float: left;
+.copyright {
+  text-align: center;
 }
 
-.menuitem{
-	display: inline-block;
-	margin: 10px;
+.btnmenu {
+  background-image: url('../img/menu.png');
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  width: 15px;
+  height: 20px;
+  padding: 3px;
+  margin: 5px;
 }
 
-.copyright{
+@media screen and (max-width: 340px) {
+  .menu,
+  .subtitle {
+    display: none;
+  }
+  .menuitem {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+}
 
-	text-align: center;
+@media screen and (max-width: 700px) {
+  .btnmenu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .menu,
+  .subtitle {
+    display: none;
+  }
+  nav {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .btnmenu {
+    display: none;
+  }
+  #menu,
+  .subtitle {
+    display: block !important;
+    /* Hace que la regla prevalezca. Por encima del javascript*/
+  }
+}
+
+.container {
+  margin: 0 5px;
+}
+@media screen and (min-width:701px) {
+  .container {
+    width: 690px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width:1001px) {
+  .container {
+    width: 990px;
+    overflow: auto;
+  }
+  aside{
+  	float: left;
+  	width: 18%;
+  	padding: 1%;
+  }
+  main{
+  	float: left;
+  	width: 78%;
+  	padding: 1%;
+  }
+ }
+
+@media screen and (min-width:1201px) {
+  .container {
+    width: 1190px;
+  }
 }

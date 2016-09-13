@@ -3,15 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
+  <script type="text/javascript" src="js/funciones.js"></script>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Mi web de cervezas</title>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
   <header>
     <img src="img/logo.png" alt="Jarrita de cerveza" class="logo">
     <h1 class="title">Mis cervezas</h1>
     <p class="subtitle">Aficiones y locuras de un amante de la cerveza</p>
     <nav>
-      <ul class="menu">
+      <button onclick="toggle_visibility('menu');" class="btnmenu"></button>
+      <ul class="menu" id="menu">
         <li class="menuitem">
           <a href="index.html" class="menulink">Inicio</a>
         </li>
@@ -24,6 +30,7 @@
       </ul>
     </nav>
   </header>
+  <div class="container">
   <aside>
     <div>
       <h2 class="bannerTitle">Anuncio 1</h2>
@@ -59,9 +66,10 @@
       <p>Varios componentes de la cerveza: la fibra soluble, los compuestos polifenólicos, los minerales y la baja graduación alcohólica, ayudan en el control de la diabetes. Además, la cerveza es capaz de aumentar la capacidad antioxidante del plasma.</p>
     </article>
   </main>
+  </div>
   <footer>
     <p class="copyright">Sitio web realizado por mí</p>
   </footer>
-  </body>
+</body>
 
 </html>
